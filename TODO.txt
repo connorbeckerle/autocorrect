@@ -1,0 +1,17 @@
+TODO - FOR SUBMISSION TO GITHUB
+
+    - try to refactor fss function
+        ... ehhhh... done? not sure best practice.
+    - repackage with multiple modules for back end, COM/server stuff, and frontend/AHK
+        done
+    - change all file references
+        done
+    - document interface parts well
+        done-ish
+
+Functionality:
+
+    - standardize/debug main search method
+    - remove all len(node.data)>0 checks if not needed
+    - make Result err_type param required
+    - fix how metadata is handled

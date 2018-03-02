@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COMServer	server.py	/^class COMServer:$/;"	c
+DebugObj	debug.py	/^class DebugObj(object):$/;"	c
+InvalidArgError	err.py	/^class InvalidArgError(Exception):$/;"	c
+NoSuchChildError	err.py	/^class NoSuchChildError(Exception):$/;"	c
+Result	results.py	/^class Result(object):    $/;"	c
+ResultList	results.py	/^class ResultList(object):$/;"	c
+ScrDots	debug.py	/^class ScrDots(object):$/;"	c
+Trie	trie.py	/^class Trie(object):$/;"	c
+TrieNode	trienode.py	/^class TrieNode(object):$/;"	c
+WordData	worddata.py	/^class WordData(object):$/;"	c
+__init__	debug.py	/^    def __init__(self, dot_interval=1000, num_interval=10000):$/;"	m	class:ScrDots
+__init__	debug.py	/^    def __init__(self, prev_dbo=None, addition=''):$/;"	m	class:DebugObj
+__init__	err.py	/^    def __init__(self, arg):$/;"	m	class:InvalidArgError
+__init__	err.py	/^    def __init__(self, key):$/;"	m	class:NoSuchChildError
+__init__	results.py	/^    def __init__(self):$/;"	m	class:ResultList
+__init__	results.py	/^    def __init__(self, prev_result=None, err_type=None):$/;"	m	class:Result
+__init__	server.py	/^    def __init__(self):$/;"	m	class:COMServer
+__init__	trie.py	/^    def __init__(self):$/;"	m	class:Trie
+__init__	trienode.py	/^    def __init__(self, data, metadata=None):$/;"	m	class:TrieNode
+__init__	worddata.py	/^    def __init__(self, count=None):$/;"	m	class:WordData
+__path__	__init__.py	/^__path__ = extend_path(__path__, __name__)/;"	v
+_build_from_trie_recursive	trie.py	/^    def _build_from_trie_recursive(self, data, metadata, node):$/;"	m	class:Trie
+_get_random_letter	testmisc2.py	/^def _get_random_letter():$/;"	f
+_keep_best	results.py	/^    def _keep_best(self, first, second):$/;"	m	class:ResultList
+_print_recursive	trie.py	/^    def _print_recursive(self, f, word, node):$/;"	m	class:Trie
+_public_attrs_	server.py	/^    _public_attrs_ = []$/;"	v	class:COMServer
+_public_methods_	server.py	/^    _public_methods_ = ['ping', 'query', 'dumb_query', 'debug_mode']$/;"	v	class:COMServer
+_readonly_attrs_	server.py	/^    _readonly_attrs_ = ['count']        $/;"	v	class:COMServer
+_reg_clsid_	server.py	/^    _reg_clsid_ = '{E88C95B9-B6BA-4365-BC3E-42C07E33B944}'$/;"	v	class:COMServer
+_reg_desc_	server.py	/^    _reg_desc_ = 'Autocorrection server!'$/;"	v	class:COMServer
+_reg_progid_	server.py	/^    _reg_progid_ = 'Python.AutoCorrectServer'$/;"	v	class:COMServer
+_search_exact	trie.py	/^    def _search_exact(self, node, word):$/;"	m	class:Trie
+add	results.py	/^    def add(self, new_result):$/;"	m	class:ResultList
+add_node	results.py	/^    def add_node(self, node):$/;"	m	class:Result
+build_from_dict	trie.py	/^    def build_from_dict(self, dict_file, debug=None):$/;"	m	class:Trie
+build_from_trie	trie.py	/^    def build_from_trie(self, trie_file):$/;"	m	class:Trie
+check_file_equiv	testmisc2.py	/^def check_file_equiv(f1, f2):$/;"	f
+chr0	trie.py	/^    chr0 = chr(0)$/;"	v	class:Trie
+contains	results.py	/^    def contains(self, word):$/;"	m	class:ResultList
+contains	trie.py	/^    def contains(self, word):$/;"	m	class:Trie
+create_from_string	worddata.py	/^def create_from_string(data_str):$/;"	f
+dbp	trie.py	/^    def dbp(self, text, dbo):$/;"	m	class:Trie
+debug_mode	server.py	/^    def debug_mode(self):$/;"	m	class:COMServer
+dumb_query	server.py	/^    def dumb_query(self, word):$/;"	m	class:COMServer
+fss_3	trie.py	/^    def fss_3(self, node, word, pos, result, result_list, k, alrdy_trans=False, dbo=None):$/;"	m	class:Trie
+fss_4	trie.py	/^    def fss_4(self, node, word, pos, result, result_list, k, alrdy_trans=False, dbo=None):$/;"	m	class:Trie
+fuzzy_search_thorough_test	testmisc2.py	/^def fuzzy_search_thorough_test():$/;"	f
+genCancelChar	testmisc.py	/^def genCancelChar():$/;"	f
+genEndChar	testmisc.py	/^def genEndChar():$/;"	f
+genLower	testmisc.py	/^def genLower():$/;"	f
+genUpper	testmisc.py	/^def genUpper():$/;"	f
+get_best	results.py	/^    def get_best(self):$/;"	m	class:ResultList
+get_best_correction	trie.py	/^    def get_best_correction(self, word):$/;"	m	class:Trie
+get_child	trienode.py	/^    def get_child(self, suffix):$/;"	m	class:TrieNode
+get_fss_results	trie.py	/^    def get_fss_results(self, word, k, dbo):$/;"	m	class:Trie
+get_key	trienode.py	/^    def get_key(self):$/;"	m	class:TrieNode
+has_child_suffix	trienode.py	/^    def has_child_suffix(self, suffix):$/;"	m	class:TrieNode
+insert	trie.py	/^    def insert(self, node, word, metadata, dbo=None):$/;"	m	class:Trie
+interactive_exactsearch_test	testmisc2.py	/^def interactive_exactsearch_test():$/;"	f
+isUserAdmin	admin.py	/^def isUserAdmin():$/;"	f
+is_terminal	trienode.py	/^    def is_terminal(self):$/;"	m	class:TrieNode
+make_import_file	testmisc2.py	/^def make_import_file():$/;"	f
+newdbo	debug.py	/^    def newdbo(self, prev_dbo=None, addition=''):$/;"	m	class:DebugObj
+ping	debug.py	/^    def ping(self):$/;"	m	class:ScrDots
+ping	server.py	/^    def ping(self):$/;"	m	class:COMServer
+print_data	worddata.py	/^    def print_data(self):$/;"	m	class:WordData
+print_structure	trie.py	/^    def print_structure(self, outPath=''):$/;"	m	class:Trie
+query	server.py	/^    def query(self, word):$/;"	m	class:COMServer
+reg	server.py	/^    def reg():$/;"	m	class:COMServer
+runAsAdmin	admin.py	/^def runAsAdmin(cmdLine=None, wait=True):$/;"	f
+set_child	trienode.py	/^    def set_child(self, child_node):$/;"	m	class:TrieNode
+test	admin.py	/^def test():$/;"	f
+test_best_corr	testmisc2.py	/^def test_best_corr():$/;"	f
+test_fss_3_1	testmisc2.py	/^def test_fss_3_1():$/;"	f
+test_import_dict	testmisc2.py	/^def test_import_dict():$/;"	f
+test_import_trie	testmisc2.py	/^def test_import_trie():$/;"	f
+test_print	testmisc2.py	/^def test_print():$/;"	f
+test_string_iteration	testmisc2.py	/^def test_string_iteration():$/;"	f
+test_time	testmisc2.py	/^def test_time():$/;"	f
+test_trie_insert	testmisc2.py	/^def test_trie_insert():$/;"	f
+test_trie_insert2	testmisc2.py	/^def test_trie_insert2():$/;"	f
+unreg	server.py	/^    def unreg():$/;"	m	class:COMServer
