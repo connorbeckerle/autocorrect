@@ -2,14 +2,35 @@
 
 @author: conno
 '''
+import sys
+import operator
 import timeit
 import random
 import time
 
-from triesearch import trie
-from triesearch import trienode
-from triesearch import worddata
-from triesearch import debug
+import trie
+import trienode
+import worddata
+import debug
+
+def test_fuzzy_interactive():
+    atrie = trie.Trie()
+    atrie.build_from_trie('../data/Word Frequency Dictionary - Full - trieform.txt')
+
+    print 'Initialized.'
+
+    while True:
+        input = raw_input()
+        if input == '': continue
+        result_list = atrie.get_potential_words(input, 1)
+        if result_list.result_dict: # if is not empty
+            print '\nRESULTS:'
+            for result in result_list.sort_results():
+                print str(result.error_count) + ' ' + result.data
+        else:
+            print'\nRESULTS:'
+            print'[empty]'
+        print ''
 
 def test_best_corr():
     atrie = trie.Trie()
