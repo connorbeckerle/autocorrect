@@ -8,6 +8,7 @@ TODO - FOR SUBMISSION TO GITHUB
         done
     - document interface parts well
         done-ish
+    - create as python package/streamline installation process
 
 Functionality:
 
