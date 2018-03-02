@@ -2,14 +2,14 @@
 '''
 import sys
 import operator
-from db import trie
-from db import worddata
-from db import debug
+import trie
+import worddata
+import debug
 
 
 def main():
     atrie = trie.Trie()
-    atrie.build_from_trie('./data/Word Frequency Dictionary - Full - trieform.txt')
+    atrie.build_from_trie('../data/Word Frequency Dictionary - Full - trieform.txt')
 
     print 'Initialized.'
 
