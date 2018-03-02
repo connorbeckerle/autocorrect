@@ -62,13 +62,6 @@ class Trie(object):
             self._fuzzy_search_r(next_node, word, 0, result, result_list, k)
         
         return result_list
-    
-    def dbp_state(self, k, node, word, pos, result):
-        self.dbp('k = ' + str(k))
-        self.dbp('node: ' + node.data[pos:])
-        self.dbp('word: ' + word)
-        self.dbp('result so far: ' + result.data)
-        self.dbp('')
 
     def _fuzzy_search_r(self, node, word, pos, result, result_list, k, alrdy_trans=False):
         '''recursive function to do search work
@@ -84,7 +77,7 @@ class Trie(object):
         :param k: allowed edits (total remaining)
         :param alrdy_trans: only allow one transposition
         '''
-        pdb.set_trace()
+        #pdb.set_trace()
         if node.data[pos:] == word:
             # we found a match! Also we must be on a leaf, so nowhere else to go
             result.data += node.data[pos:-1]
@@ -317,6 +310,13 @@ class Trie(object):
         '''
         print text 
         
+    def dbp_state(self, k, node, word, pos, result):
+        self.dbp('k = ' + str(k))
+        self.dbp('node: ' + node.data[pos:])
+        self.dbp('word: ' + word)
+        self.dbp('result so far: ' + result.data)
+        self.dbp('')
+
     def __init__(self):
         '''Instantiate
         '''
